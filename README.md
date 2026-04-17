@@ -83,7 +83,7 @@ public static String getValue(String pair)
   <tr>
    <td><code>public static String getKey(String pair)</code>
    </td>
-   <td> Returns the <code>key</code> from a key-value pair (e.g. <code>student</code> from <code>student=Frank</code>). If the key is the empty string <code>""</code> (e.g. <code>student=</code>), return <code>""</code>.
+   <td> Returns the <code>key</code> from a key-value pair (e.g. <code>student</code> from <code>student=Frank</code>). If the key is the empty string <code>""</code> (e.g. <code>=Frank</code>), return <code>""</code>.
    </td>
   </tr>
   <tr>
