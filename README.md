@@ -35,7 +35,7 @@ data structure.** The whole data file is passed around as a single
 
 Your `Parser` operates on plain text data. **Each line is one record.** A
 **record** is a list of `key=value` pairs (fields) separated by semicolons. *Every*
-record starts with an `id` field. Every `id` is **unique** (no duplicates).
+record starts with an `id` field. Every `id` is **unique** (no duplicates) — note that this `id` identifies the record, not the student (a student can appear in multiple records, each with its own `id`).
 
 Example (`data.txt`):
 ```
@@ -119,7 +119,7 @@ public static String findFieldVal(String record, String key)
   <tr>
    <td><code>public static String findFieldVal(String record, String key)</code>
    </td>
-   <td> Returns the value of a key-value pair from a single <code>record</code> based on the given <code>key</code>. If <code>key</code> does not exist in the record, return the empty string.
+   <td> Returns the value of a key-value pair from a single <code>record</code> based on the given <code>key</code>. If <code>key</code> does not exist in the record, return the empty string. If <code>key</code> is the empty string <code>""</code>, follow the handling described in the Part 1 instructions.
    </td>
   </tr>
 </table>
